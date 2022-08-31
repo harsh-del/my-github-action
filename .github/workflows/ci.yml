@@ -10,7 +10,7 @@ jobs:
       os: ["ubuntu-latest","windows-latest","macOS-latest"]
    steps:
      - name: checking out repo
-       uses: action/checkout@v3
+       uses: actions/checkout@v3
 
      - name: testing code
        run: echo "hello" && date
