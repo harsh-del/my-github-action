@@ -13,7 +13,7 @@ jobs:
        uses: action/checkout@v3
 
      - name: testing code
-       runs: echo "hello" && date
+       run: echo "hello" && date
 
 
 
