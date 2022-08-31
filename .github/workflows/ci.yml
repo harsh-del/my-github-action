@@ -5,7 +5,7 @@ on:
 jobs:
   mytestjob:
    runs-on: ${{matrix.os}}
-   stratergy:
+   strategy:
      matrix:
       os: ["ubuntu-latest","windows-latest","macOS-latest"]
    steps:
