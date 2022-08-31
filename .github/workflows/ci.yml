@@ -1,0 +1,20 @@
+name: testing workflows
+on:
+ push:
+   branches: master
+jobs:
+  mytestjob:
+   runs-on: ${{matrix.os}}
+   stratergy:
+     matrix:
+      os: ["ubuntu-latest","windows-latest","macOS-latest"]
+   steps:
+     - name: checking out repo
+       uses: action/checkout@v3
+
+     - name: testing code
+       runs: echo "hello" && date
+
+
+
+   
